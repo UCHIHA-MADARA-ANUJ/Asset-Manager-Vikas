@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "TechNova 2047"
+title = "Project VIKAS"
 version = "1.0.0"
 id = "artifacts/technova-2047"
 router = "path"
@@ -8,7 +8,7 @@ router = "path"
 [[services]]
 name = "web"
 paths = [ "/" ]
-localPort = 23456
+localPort = 3000
 
 [services.development]
 run = "pnpm --filter @workspace/technova-2047 run dev"
@@ -23,5 +23,5 @@ from = "/*"
 to = "/index.html"
 
 [services.env]
-PORT = "23456"
+PORT = "3000"
 BASE_PATH = "/"
