@@ -24,13 +24,13 @@ args = "Project Vikas"
 name = "Project Vikas"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "PORT=23456 BASE_PATH=/ pnpm --filter @workspace/technova-2047 run dev"
-waitForPort = 23456
-
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "PORT=5173 BASE_PATH=/ pnpm --filter @workspace/technova-2047 run dev"
+waitForPort = 5173
 
 [agent]
 stack = "PNPM_WORKSPACE"
